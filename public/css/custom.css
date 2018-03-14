@@ -1,0 +1,29 @@
+.education{
+  font-weight: bolder;
+  font-size: 20px;
+  color: white;
+}
+.education-content p{
+  color: white;
+}
+.single-feature .desc{
+  text-align: center;
+}
+.resume button{
+  float: right;
+  margin-bottom: 10%;
+}
+.logoText{
+  font-size: 20px;
+  font-weight: bolder;
+}
+.foot-resume{
+  float: right;
+  margin-bottom: 10%;
+}
+.skill-name{
+  font-weight: bold;
+}
+.header-box{
+  border-left: #333a56 4px solid;
+}
