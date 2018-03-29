@@ -8,9 +8,6 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, './index.html'));
 });
 
-app.get('/resume', (req, res) => {
-  res.sendFile(path.join(__dirname, '/resume.pdf'));
-});
 app.listen(port, () => {
   console.log('App is running on port: ', port);
 })
