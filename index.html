@@ -9,11 +9,11 @@
         <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     </head>
     <body>
-        <!-- <img src="content/img/lightbulb-off.png" class="light-bulb-off"></img> -->
+        <img src="content/img/lightbulb-off.png" class="light-bulb-off"></img>
         <!-- Nav Bar Code - Start -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">
-                <img src="content/img/header-img.png" class="img img-resposnive">
+                <img src="content/img/header-img.png" class="img img-resposnive img-brand">
             </a>
             <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -34,30 +34,37 @@
                 </ul>
             </div>
             <!-- </div> -->
-            <div id="hiddenNav" class="nav-animate">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                            <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Our Work</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About Us</a>
-                                </li>        
-                    </ul>
-                </div>
             <form class="form-inline">
-                <button id="nav-btn" class="btn btn-lg nav-animate-btn">
+                <button type="button" id="nav-btn" class="btn btn-lg nav-animate-btn">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <button type="button" id="nav-btn-cross" class="btn btn-lg nav-animate-btn">
+                    <img src="content/img/cross.png">
+                </button>
             </form>
+        </nav>
+        <nav id="hiddenNav" class="navbar fixed-top navbar-expand-lg nav-animate color-black">
+            <div id="empty-div-for-height"></div>
+            <div class="">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 color-black">
+                    <li class="nav-item active">
+                        <a class="nav-link color-lightgray" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-lightgray" href="#">Our Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-lightgray" href="#">About Us</a>
+                    </li>        
+                </ul>
+            </div>
         </nav>
         <!-- Nav Bar Code - End -->
 
         <!-- Main Page Body Content - Start -->
         <h1 class="font-Bigger-heading font-72 color-orange">Lorem Ipsem</h1>
         <h1 class="font-Bigger-heading font-60 color-dark-blue">Lorem Ipsem</h1>
+        <div class="font-Bigger-heading font-72 color-orange" style="min-height: 3000px">A very long div</div>
         <!-- Main Page Body Content - End -->
 
         <!-- Scripts References Goes Down Here -->
