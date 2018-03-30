@@ -97,6 +97,10 @@ body {
     font-family: 'Cabin Sketch', cursive;
 }
 
+.font-40 {
+    font-size: 2.5rem;
+}
+
 .font-60 {
     font-size: 3.75rem;
 }
@@ -113,7 +117,7 @@ body {
 .light-bulb-off {
     margin: auto 0;
     position: fixed;
-    top: -500px;
+    top: -450px;
     left: 40%;
 }
 /* BULB CSS - END */

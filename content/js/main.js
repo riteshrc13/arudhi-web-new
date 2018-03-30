@@ -5,7 +5,7 @@ $(window).scroll(function(){
     var docH = $(document).height();
     var winH = $(window).height();
     var pct = (pos/docH);
-    var actPos = (pct * winH) - 500;
+    var actPos = (pct * winH) - 450;
     $('.light-bulb-off').animate({"top": actPos+"px"}, 1);
     $('#wct').text(pos);
     $('#dh').text(docH);
