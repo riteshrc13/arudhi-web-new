@@ -1,21 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="content/css/bootstrap.min.css" rel="stylesheet">
         <link href="content/css/main.css" rel="stylesheet">
-        
+        <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     </head>
     <body>
-        <p id="top"></p>
-        <div style="min-height:1000px;background-color:aqua">A Long Div</div>
-        <div style="min-height:1000px;background-color:bisque">A Long Div</div>
-        <div style="min-height:1000px;background-color:chartreuse">A Long Div</div>
-        <a href="#top">Click to go to top</a>
+        <!-- <img src="content/img/lightbulb-off.png" class="light-bulb-off"></img> -->
+        <!-- Nav Bar Code - Start -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="content/img/header-img.png" class="img img-resposnive">
+            </a>
+            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- <div class="display-none"> -->
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 display-none">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- </div> -->
+            <div id="hiddenNav" class="nav-animate">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Our Work</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About Us</a>
+                                </li>        
+                    </ul>
+                </div>
+            <form class="form-inline">
+                <button id="nav-btn" class="btn btn-lg nav-animate-btn">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </form>
+        </nav>
+        <!-- Nav Bar Code - End -->
 
-
+        <!-- Main Page Body Content - Start -->
+        <h1 class="font-Bigger-heading font-72 color-orange">Lorem Ipsem</h1>
+        <h1 class="font-Bigger-heading font-60 color-dark-blue">Lorem Ipsem</h1>
+        <!-- Main Page Body Content - End -->
 
         <!-- Scripts References Goes Down Here -->
         <script src="content/js/jquery-3.3.1.js" type="text/javascript"></script>
+        <script src="content/js/bootstrap.min.js" type="text/javascript"></script>
         <script src="content/js/smoothScroll.js" type="text/javascript"></script>
         <script src="content/js/ScrollMagic.js" type="text/javascript"></script>
+        <script src="content/js/main.js" type="text/javascript"></script>
     </body>
 </html>

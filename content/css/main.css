@@ -1,3 +1,64 @@
 /* html {
     scroll-behavior: smooth;
 } */
+
+body {
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 300px;
+}
+
+.light-bulb-off {
+    margin: auto 0;
+    position: fixed;
+    top: -400px;
+    left: 40%;
+}
+
+.test-text {
+    margin: auto 0;
+    position: fixed;
+    top : 0px;
+    left: 40%; 
+}
+
+.display-none {
+    display: none;
+}
+
+.nav-animate {
+    position: fixed;
+    left: 100%;
+}
+.nav-animate-btn {
+    cursor: pointer;
+    color: rgba(0,0,0,.5);
+    border-color: rgba(0,0,0,.1);
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border-radius: .25rem;
+}
+
+
+.font-Bigger-heading, h1, h2, h3, h4 {
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.font-60 {
+    font-size: 3.75rem;
+}
+
+.font-72 {
+    font-size: 4.5rem;
+}
+
+.color-orange {
+    color: #fc4a1a;
+}
+
+.color-dark-blue {
+    color: #333a56;
+}
