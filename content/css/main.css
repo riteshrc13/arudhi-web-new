@@ -5,18 +5,23 @@
 body {
     font-weight: bold;
     font-size: 1.5rem;
-    margin-top: 7.5rem;             /*Fix for nav baar*/
+    margin-top: 7.5rem;
+    /*Fix for nav baar*/
 }
 
 .test-text {
     margin: auto 0;
     position: fixed;
-    top : 0px;
-    left: 40%; 
+    top: 0px;
+    left: 40%;
 }
 
+
 /**************************************************************************/
+
+
 /* NAV CSS - Start */
+
 nav {
     min-height: 7.5rem;
 }
@@ -25,13 +30,15 @@ nav {
     position: fixed;
     left: 100%;
     margin-top: 5px;
-    min-height: 7rem;       /*Change this height as per class img-brand*/
+    min-height: 7rem;
+    /*Change this height as per class img-brand*/
     width: 350px;
     z-index: 700;
 }
+
 .nav-animate-btn {
     cursor: pointer;
-    color: rgba(0,0,0,.5);
+    color: rgba(0, 0, 0, .5);
     /* border-color: rgba(0,0,0,.1); */
     padding: .25rem .75rem;
     font-size: 1.25rem;
@@ -53,11 +60,19 @@ nav {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+
+
 /* NAV CSS - END */
+
+
 /****************************************************************************/
 
+
 /******************************************************************************/
+
+
 /* COLOR CSS - START */
+
 .color-orange {
     color: #fc4a1a;
 }
@@ -77,23 +92,44 @@ nav {
 .color-lightgray {
     color: gray;
 }
+
+
 /* COLOR CSS - END */
-/******************************************************************************/
+
 
 /******************************************************************************/
+
+
+/******************************************************************************/
+
+
 /* COMMON CSS - START */
+
 .display-none {
     display: none !important;
 }
+
+
 /* COMMON CSS - END */
-/******************************************************************************/
+
 
 /******************************************************************************/
+
+
+/******************************************************************************/
+
+
 /* FONT CSS - START */
+
 body {
     font-family: 'Cabin', sans-serif;
 }
-.font-Bigger-heading, h1, h2, h3, h4 {
+
+.font-Bigger-heading,
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Cabin Sketch', cursive;
 }
 
@@ -108,25 +144,45 @@ body {
 .font-72 {
     font-size: 4.5rem;
 }
+
+
 /* FONT CSS - END */
+
+
 /******************************************************************************/
 
 
 /******************************************************************************/
+
+
 /* BULB CSS - START */
+
 .light-bulb-off {
     margin: auto 0;
     position: fixed;
     top: -450px;
     left: 40%;
 }
+
+
 /* BULB CSS - END */
+
+
 /******************************************************************************/
 
 
-
 /******************************************************************************/
+
+
 /* Template CSS - START */
 
+.icon-default {
+    font-size: 3.75rem;
+    color: red;
+}
+
+
 /* Template CSS - END */
+
+
 /******************************************************************************/
