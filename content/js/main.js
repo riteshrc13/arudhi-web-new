@@ -19,6 +19,13 @@ $(window).scroll(function(){
 });
 
 $(document).ready(function() {
+    var pos = $(window).scrollTop();
+    var docH = $(document).height();
+    var winH = $(window).height();
+    var pct = (pos/docH)/(1.5);
+    var actPos = (pct * winH) - 300;
+    $('.light-bulb-off').animate({"top": actPos+"px"}, 1);
+    $('.light-bulb-on').animate({"top": actPos+"px"}, 1);
     var screenWidth = $(document).width();
     var leftPosOff = (screenWidth/2 - ($('.light-bulb-off').width()/2));
     var leftPosOn = (screenWidth/2 - ($('.light-bulb-on').width()/2));
@@ -60,6 +67,20 @@ $(document).ready(function(){
         $('#nav-btn-cross').hide(1000);
     });
 })
+
+$(window).resize(function(){
+    var ele = $('#hiddenNav');
+    ele.animate({"left":"100%"}, 1000);
+    $('#nav-btn').show(1000);
+    $('#nav-btn-cross').hide(1000);
+
+    var screenWidth = $(document).width();
+    var leftPosOff = (screenWidth/2 - ($('.light-bulb-off').width()/2));
+    var leftPosOn = (screenWidth/2 - ($('.light-bulb-on').width()/2));
+    $('.light-bulb-off').animate({"left": leftPosOff+"px"}, 1);
+    $('.light-bulb-on').animate({"left": leftPosOn+"px"}, 1);
+    $('.light-bulb-on').hide(1);
+});
 ////////////////////////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////////////////////////
