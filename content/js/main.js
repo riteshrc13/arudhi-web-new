@@ -7,21 +7,23 @@ $(window).scroll(function(){
     var pct = (pos/docH)/(1.5);
     var actPos = (pct * winH) - 300;
     $('.light-bulb-off').animate({"top": actPos+"px"}, 1);
+    $('.light-bulb-on').animate({"top": actPos+"px"}, 1);
     if(isBottomIntoView('#second-last-page')){
-        $('.light-bulb-off').hide(1000);
-        $('.light-bulb-on').show(1000);
+        $('.light-bulb-off').fadeOut(500);
+        $('.light-bulb-on').fadeIn(500);
     }
     else {
-        $('.light-bulb-off').show(1000);
-        $('.light-bulb-on').hide(1000);
+        $('.light-bulb-off').fadeIn(500);
+        $('.light-bulb-on').fadeOut(500);
     }
 });
 
 $(document).ready(function() {
-    var screenWidth = $(window).width();
-    var leftPos = (screenWidth/2 - ($('.light-bulb-off').width()/2));
-    $('.light-bulb-off').animate({"left": leftPos+"px"}, 1);
-    $('.light-bulb-on').animate({"left": leftPos+"px"}, 1);
+    var screenWidth = $(document).width();
+    var leftPosOff = (screenWidth/2 - ($('.light-bulb-off').width()/2));
+    var leftPosOn = (screenWidth/2 - ($('.light-bulb-on').width()/2));
+    $('.light-bulb-off').animate({"left": leftPosOff+"px"}, 1);
+    $('.light-bulb-on').animate({"left": leftPosOn+"px"}, 1);
     $('.light-bulb-on').hide(1);
 });
 
@@ -62,14 +64,18 @@ $(document).ready(function(){
 
 ////////////////////////////////////////////////////////////////////////
 // Script To Give Div Height of Whole Page
-$(document).ready(function(){
-    var heigh = $(window).height();
-    $('page-full').css('min-height', heigh+"px");
-    $('page-full').css('height', heigh+"px");
-    $(window).resize(function(){
-        var heighIn = $(window).height();
-        $('page-full').css('min-height', heighIn+"px");
-        $('page-full').css('height', heighIn+"px");
-    })
-})
+// $(document).ready(function() {
+//     var screenHeight = $(window).height();
+//     var divHeight = screenHeight - $('#mainNav').height();
+//     var contentHeight = $('.page-content > div').height();
+//     var remHeight = divHeight - contentHeight;
+//     $('.page-content').css('padding-top', (0.6)*remHeight+"px");
+//     $('.page-content').css('padding-bottom', (0.4)*remHeight+"px");
+//     $(window).resize(function(){
+//         var screenHeightIn = $(window).height();
+//         var divHeightIN = screenHeightIn - $('#mainNav').height();
+//         $('.page-content').css('min-height', divHeightIN+"px");
+//         $('.page-content').css('height', divHeightIN+"px");
+//     })
+// });
 ////////////////////////////////////////////////////////////////////////
