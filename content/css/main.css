@@ -64,7 +64,12 @@ nav {
     transition: all 0.5s ease;
 }
 
-
+.nav-mobile {
+    display: none;
+}
+.nav-form {
+    display: inline-block;
+}
 /* NAV CSS - END */
 
 
@@ -221,7 +226,7 @@ img {
 
 /******************************************************************************/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
     .container {
         padding-bottom: 30%;
     }
@@ -230,6 +235,12 @@ img {
     }
     body {
         font-size: 1.5rem;
+    }
+    .nav-mobile {
+        display: inline-block;
+    }
+    .nav-form {
+        display: none !important;
     }
 }
 
@@ -245,7 +256,7 @@ img {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
     .container {
         padding-bottom: 50%;
     }
