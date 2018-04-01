@@ -6,6 +6,7 @@ body {
     font-weight: bold;
     font-size: 1.5rem;
     margin-top: 7.5rem;
+    width: 100%;
     /*Fix for nav baar*/
 }
 
@@ -109,6 +110,10 @@ nav {
     display: none !important;
 }
 
+html {
+    font-size: 100%;
+}
+
 
 /* COMMON CSS - END */
 
@@ -181,8 +186,48 @@ h4 {
     color: red;
 }
 
+img {
+    max-width: 100%;
+}
+
 
 /* Template CSS - END */
 
 
 /******************************************************************************/
+
+@media screen and (max-width: 900px) {
+    .container {
+        padding-bottom: 30%;
+    }
+    p {
+        line-height: 100%
+    }
+    body {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding-bottom: 40%;
+    }
+    p {
+        line-height: 100%
+    }
+    body {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding-bottom: 50%;
+    }
+    p {
+        line-height: 100%
+    }
+    body {
+        font-size: 1rem;
+    }
+}
