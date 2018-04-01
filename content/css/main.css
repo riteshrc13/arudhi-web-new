@@ -186,6 +186,16 @@ h4 {
     color: red;
 }
 
+.icon-background {
+    color: grey;
+}
+
+.arrow-icon-default {
+    font-size: 3.75rem;
+    color: grey;
+    border: 2px
+}
+
 img {
     max-width: 100%;
 }
