@@ -4,7 +4,7 @@ $(window).scroll(function(){
     var pos = $(window).scrollTop();
     var docH = $(document).height();
     var winH = $(window).height();
-    var pct = (pos/docH);
+    var pct = (pos/docH)/(1.5);
     var actPos = (pct * winH) - 300;
     $('.light-bulb-off').animate({"top": actPos+"px"}, 1);
     if(isBottomIntoView('#second-last-page')){
