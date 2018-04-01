@@ -170,7 +170,9 @@ h4 {
 .light-bulb-on {
     margin: auto 0;
     position: fixed;
-    max-height: 341px;
+    top: -300px;
+    /* left: 40%; */
+    max-height: 385px; 
 }
 
 
