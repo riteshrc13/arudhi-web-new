@@ -19,6 +19,10 @@ body {
     margin-top: 20% !important;
 }
 
+section{
+    height: 100vh;
+    padding: 10%;
+}
 
 /**************************************************************************/
 
@@ -157,7 +161,21 @@ h4 {
     font-size: 4.5rem;
 }
 
+.submit-btn{
+    margin: 20px;
+    float: right;
+    border-color: #333a56 !important;
+    color: #333a56;
+}
 
+.submit-btn:hover{
+    background-color: #333a56 !important;
+    color: #ffffff;
+}
+.input-group-text{
+    background-color: #333a56 !important;
+    color: #ffffff;
+}
 /* FONT CSS - END */
 
 
@@ -220,6 +238,9 @@ img {
     color: white;
 }
 
+/*.section-image{
+    width: 50%;
+}*/
 
 /* Template CSS - END */
 
