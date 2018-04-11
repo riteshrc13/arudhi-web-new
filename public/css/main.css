@@ -20,8 +20,12 @@ body {
 }
 
 section{
+    /*height: 100vh;*/
+    margin: 10% 10% 0 10%;
+}
+#clients{
     height: 100vh;
-    padding: 10%;
+    padding-top: 20%;
 }
 
 /**************************************************************************/
@@ -175,6 +179,10 @@ h4 {
 .input-group-text{
     background-color: #333a56 !important;
     color: #ffffff;
+}
+.subtitle-text{
+    margin-top: 30px;
+    font-size: 20px;
 }
 /* FONT CSS - END */
 
