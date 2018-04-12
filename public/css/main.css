@@ -142,14 +142,16 @@ html {
 /* FONT CSS - START */
 
 body {
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Poiret One', cursive;
 }
 
 .font-Bigger-heading,
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
     font-family: 'Cabin Sketch', cursive;
 }
 
@@ -211,6 +213,14 @@ h4 {
     max-height: 385px; 
 }
 
+.light-bulb-on-2 {
+    margin: auto 0;
+    position: relative;
+    top: -300px;
+    /* left: 40%; */
+    max-height: 385px; 
+}
+
 
 /* BULB CSS - END */
 
@@ -246,9 +256,17 @@ img {
     color: white;
 }
 
-/*.section-image{
+.section-image img{
     width: 50%;
-}*/
+    margin: auto;
+    display: block;
+}
+.aboutus-heading{
+    margin-bottom: 50px;
+}
+.home-subtext{
+    margin-top: 50px;
+}
 
 /* Template CSS - END */
 
