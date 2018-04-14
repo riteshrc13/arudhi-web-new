@@ -39,7 +39,7 @@ nav {
 
 .nav-animate {
     position: fixed;
-    left: 100%;
+    left: 90%;
     margin-top: 5px;
     min-height: 7rem;
     /*Change this height as per class img-brand*/
@@ -77,6 +77,9 @@ nav {
 }
 .nav-form {
     display: inline-block;
+}
+.brand-logo {
+    width: 150px;
 }
 /* NAV CSS - END */
 
@@ -186,6 +189,23 @@ h6 {
     margin-top: 30px;
     font-size: 20px;
 }
+.section-text{
+    margin:auto;
+    display: block;
+}
+.address{
+    margin: auto;
+    display: block;
+}
+.page-footer{
+    background: #333a56;
+    color: white;
+    font-size: 15px;
+    display: block;
+}
+.copyright{
+    padding: 20px !important;
+}
 /* FONT CSS - END */
 
 
@@ -257,7 +277,7 @@ img {
 }
 
 .section-image img{
-    width: 50%;
+    width: 80%;
     margin: auto;
     display: block;
 }
@@ -266,6 +286,12 @@ img {
 }
 .home-subtext{
     margin-top: 50px;
+}
+.btn-cross{
+    width: 50px;
+}
+nav{
+    font-size: 15px;
 }
 
 /* Template CSS - END */

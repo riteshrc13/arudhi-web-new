@@ -13,57 +13,28 @@
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
   <img src="img/lightbulb-off.png" class="light-bulb-off img-responsive"></img>
   <img src="img/lightbulb-on.png" class="light-bulb-on img-responsive"></img>
   <!-- Nav Bar Code - Start -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#">
-            <img src="img/header-img.png" class="img img-resposnive img-brand">
-        </a>
-    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-      aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavId">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav-mobile">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Our Work</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
-        </li>
+  <a class="navbar-brand" href="#">
+    <img class="brand-logo" src="img/header-img.png" />
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav mr-auto">
       </ul>
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#aboutus">About</a>
+      <a class="nav-item nav-link" href="#services-1">We Offer</a>
+      <a class="nav-item nav-link" href="#contact">Contact</a>
     </div>
-    <!-- </div> -->
-    <form class="form-inline nav-form">
-      <button type="button" id="nav-btn" class="btn btn-lg nav-animate-btn">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-      <button type="button" id="nav-btn-cross" class="btn btn-lg nav-animate-btn">
-                    <img src="img/cross.png">
-                </button>
-    </form>
-  </nav>
-  <nav id="hiddenNav" class="navbar fixed-top navbar-expand-lg nav-animate color-black">
-    <div id="empty-div-for-height"></div>
-    <div class="">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 color-black">
-        <li class="nav-item active">
-          <a class="nav-link color-lightgray" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link color-lightgray" href="#">Our Work</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link color-lightgray" href="#">About Us</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  </div>
+</nav>
   <!-- Nav Bar Code - End -->
 
   <!-- Main Page Body Content - Start -->
@@ -77,7 +48,7 @@
       </div>
       <div class="row text-center home-subtext">
         <div class="col-sm-12">
-          <h6>We offer A – Z offshore services to cater to all your Business needs thus saving your time, effort and money</h6>
+          <p>We offer A – Z offshore services to cater to all your business needs thus saving your time, effort and money</p>
         </div>
       </div>
       <div class="row text-center home-1">
@@ -111,13 +82,12 @@
     </div>
   </section>
   <section id="services-1">
-    <div class="row">
-      <div class="col-sm-12 section-image">
+    <div class="container">
+    <div class="row text-center home-2" id="home-2">
+      <div class="col-sm-12 col-md-6 section-image">
         <img src="img/pic1.png" alt="">
       </div>
-    </div>
-    <div class="row text-center home-2" id="home-2">
-      <div class="col-sm-12 float-left">
+      <div class="col-sm-12 col-md-6 float-left section-text">
         <h1 class="font-60 color-dark-blue">Business</h1>
         <h1 class="font-60 color-orange">Initiation</h1>
         We analyze feasibility of a new idea (or performance of an existing brand) to convert it to reach new height of success
@@ -125,28 +95,24 @@
     </div>
   </section>
   <section id="services-2">
-    <div class="row">
-      <div class="col-sm-12 section-image">
-        <img src="img/pic2.png" alt="">
-      </div>
-    </div>
     <div class="row text-center">
-      <div class="col-sm-12">
+      <div class="col-sm-12 col-md-6 section-text">
         <h1>
           <span class="font-60 color-orange">Stra</span><span class="font-60 color-dark-blue">tegy</span>
         </h1>
         We help you with a 360-degree consultancy to design your successful business roadmap 
       </div>
+      <div class="col-sm-12 col-md-6 section-image">
+        <img src="img/pic2.png" alt="">
+      </div>
     </div>
   </section>
   <section id="services-3">
-    <div class="row">
-      <div class="col-sm-12 section-image">
+    <div class="row text-center home-4">
+      <div class="col-sm-12 col-md-6 section-image">
         <img src="img/pic3.png" alt="">
       </div>
-    </div>
-    <div class="row text-center home-4">
-      <div class="col-sm-12">
+      <div class="col-sm-12 col-md-6 section-text">
         <h1 class="font-60 color-dark-blue">Marketing</h1>
         <h1>
           <span class="font-60 color-orange">&</span>
@@ -157,27 +123,24 @@
     </div>
   </section>
   <section id="services-4">
-    <div class="row">
-      <div class="col-sm-12 section-image">
-        <img src="img/pic4.png" alt="">
-      </div>
-    </div>
     <div class="row text-center home-5">
-      <div class="col-sm-12">
+      <div class="col-sm-12 col-md-6 section-text">
         <h1 class="font-60 color-orange">Accounting</h1>
         <h1 class="font-60 color-dark-blue">Services</h1>
         Get expert hands to shape your regular accounting details transparently in any format to smoothly drive your business
       </div>
+
+      <div class="col-sm-12 col-md-6 section-image">
+        <img src="img/pic4.png" alt="">
+      </div>
     </div>
   </section>
   <section id="services-5">
-    <div class="row">
-      <div class="col-sm-12 section-image">
+    <div class="row text-center home-6">
+      <div class="col-sm-12 col-md-6 section-image">
         <img src="img/pic5.png" alt="">
       </div>
-    </div>
-    <div class="row text-center home-6">
-      <div class="col-sm-12">
+      <div class="col-sm-12 col-md-6 section-text">
         <h1 class="font-60 color-orange">Digital</h1>
         <h1 class="font-60 color-dark-blue">Presence</h1>
         We have an experienced team to transform your business with the help of latest technologies
@@ -185,17 +148,16 @@
     </div>
   </section>
   <section id="services-6">
-    <div class="row">
-      <div class="col-sm-12 section-image">
-        <img src="img/pic6.png" alt="">
-      </div>
-    </div>
     <div class="row text-center home-7">
-      <div class="col-sm-12">
+      <div class="col-sm-12 col-md-6 section-text">
         <h1 class="font-60 color-orange">Product</h1>
         <h1 class="font-60 color-dark-blue">Engineering</h1>
         We can help your product to gain the extra mileage with strong management and necessary support
       </div>
+      <div class="col-sm-12 col-md-6 section-image">
+        <img src="img/pic6.png" alt="">
+      </div>
+    </div>
     </div>
   </section>
   <section id="clients">
@@ -228,10 +190,20 @@
             </div>-->
     <div class="row text-center contact">
       <div class="col-lg-12">
-        <h1 class="font-60 color-orange">Reach Us</h1>
+        <h1><span class="font-60 color-orange">Reach </span><span class="font-60 color-dark-blue">Us</span></h1>
       </div>
     </div>
-    <div class="row text-center contact-form">
+    <div class="row text-center contact">
+      <div class="col-lg-6 address">
+        <i class="fa fa-map-marker icon-default"></i><br>
+        <p>115/2, XYZ Avenue,<br>ABC, Chennai - 600007</p>
+      </div>
+      <div class="col-lg-6 address">
+        <i class="fa fa-mobile icon-default"></i><br>
+        <p>+91 9934 343434<br>contact@arudhi.com</p>
+      </div>
+    </div>
+    <!--<div class="row text-center contact-form">
       <div class="col-lg-12">
         <div class="input-group mb-3">
           <div class="input-group-prepend">
@@ -262,8 +234,19 @@
         </div>
         <button type="button" class="submit-btn btn btn-outline-primary">Submit</button>
       </div>
-    </div>
+    </div>-->
   </section>
+  <footer class="page-footer font-small pt-4 mt-4">
+    <div class="footer-copyright py-3 text-center">
+      <div class="social-links">
+      <i style="font-size:24px;padding-right:20px;" class="fa">&#xf082;</i>
+      <i style="font-size:24px;padding-right:20px;" class="fa">&#xf0e1;</i>
+      <i style="font-size:24px;padding-right:20px;" class="fa">&#xf099;</i>
+    </div>
+    <br/>
+       <span class="copyright"> © 2018 Copyright: Arudhi Pvt Limited</span>
+    </div>
+  </footer>
   <!-- Main Page Body Content - End -->
 
   <!-- Scripts References Goes Down Here -->
