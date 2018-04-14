@@ -8,7 +8,7 @@ $(window).scroll(function(){
     var actPos = (pct * winH) - 300;
     $('.light-bulb-off').animate({"top": actPos+"px"}, 1);
     $('.light-bulb-on').animate({"top": actPos+"px"}, 1);
-    if(isBottomIntoView('#second-last-page')){
+    if(isBottomIntoView('#contact')){
         $('.light-bulb-off').fadeOut(500);
         $('.light-bulb-on').fadeIn(500);
     }
