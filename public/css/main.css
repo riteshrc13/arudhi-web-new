@@ -155,7 +155,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Cabin Sketch', cursive;
+    font-family: 'Lato', sans-serif;
 }
 
 .font-40 {
@@ -213,6 +213,9 @@ h6 {
 .copyright{
     padding: 20px !important;
 }
+.about-text{
+    font-size: 18px;
+}
 /* FONT CSS - END */
 
 
@@ -227,7 +230,7 @@ h6 {
 .light-bulb-off {
     margin: auto 0;
     position: fixed;
-    top: -300px;
+    top: -350px;
     /* left: 40%; */
     max-height: 341px;
 }
@@ -302,6 +305,9 @@ nav{
 }
 .reachus{
     margin-top: 100px;
+}
+.contact{
+    font-size: 14px;
 }
 
 /* Template CSS - END */
