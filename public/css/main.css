@@ -196,6 +196,13 @@ h6 {
 .address{
     margin: auto;
     display: block;
+    padding: 20px;
+}
+.adress-text{
+    display: block;
+    width: 50%;
+    text-wrap:normal;
+    margin: auto;
 }
 .page-footer{
     background: #333a56;
@@ -292,6 +299,9 @@ img {
 }
 nav{
     font-size: 15px;
+}
+.reachus{
+    margin-top: 100px;
 }
 
 /* Template CSS - END */
