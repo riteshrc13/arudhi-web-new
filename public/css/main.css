@@ -243,7 +243,8 @@ h6 {
 /* BULB CSS - START */
 
 .light-bulb-off {
-    margin: auto 0;
+    margin: auto;
+    display: block;
     position: fixed;
     top: -300px;
     /* left: 40%; */
@@ -251,16 +252,9 @@ h6 {
 }
 
 .light-bulb-on {
-    margin: auto 0;
+    margin: auto;
+    display: block;
     position: fixed;
-    top: -300px;
-    /* left: 40%; */
-    max-height: 385px; 
-}
-
-.light-bulb-on-2 {
-    margin: auto 0;
-    position: relative;
     top: -300px;
     /* left: 40%; */
     max-height: 385px; 
