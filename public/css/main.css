@@ -83,7 +83,7 @@ nav {
     display: inline-block;
 }
 .brand-logo {
-    width: 150px;
+    width: 100px;
 }
 /* NAV CSS - END */
 
@@ -344,7 +344,10 @@ nav{
         display: none;
     }
     .light-bulb-on{
-        display: none;
+        display: none !important;
+    }
+    .brand-logo {
+        width: 50px !important;
     }
 }
 
@@ -358,6 +361,12 @@ nav{
     body {
         font-size: 1.2rem;
     }
+    .light-bulb-on{
+        display: none !important;
+    }
+    .brand-logo {
+        width: 50px !important;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -369,5 +378,11 @@ nav{
     }
     body {
         font-size: 1rem;
+    }
+    .light-bulb-on{
+        display: none !important;
+    }
+    .brand-logo {
+        width: 50px !important;
     }
 }
