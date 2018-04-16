@@ -341,13 +341,21 @@ nav{
         display: none !important;
     }
     .light-bulb-off{
-        display: none;
+        display: none !important;
     }
     .light-bulb-on{
         display: none !important;
     }
     .brand-logo {
-        width: 50px !important;
+        width: 75px !important;
+    }
+    .navbar{
+        background: white;
+    }
+    .navbar-nav{
+        float: right;
+        text-align: right;
+        background: white;
     }
 }
 
@@ -361,11 +369,22 @@ nav{
     body {
         font-size: 1.2rem;
     }
+    .light-bulb-off{
+        display: none !important;
+    }
     .light-bulb-on{
         display: none !important;
     }
     .brand-logo {
-        width: 50px !important;
+        width: 75px !important;
+    }
+    .navbar{
+        background: white;
+    }
+    .navbar-nav{
+        float: right;
+        text-align: right;
+        background: white;
     }
 }
 
@@ -379,10 +398,19 @@ nav{
     body {
         font-size: 1rem;
     }
+
     .light-bulb-on{
         display: none !important;
     }
     .brand-logo {
-        width: 50px !important;
+        width: 75px !important;
+    }
+    .navbar{
+        background: white;
+    }
+    .navbar-nav{
+        float: right;
+        text-align: right;
+        background: white;
     }
 }
