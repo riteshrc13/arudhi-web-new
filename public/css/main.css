@@ -340,6 +340,12 @@ nav{
     .nav-form {
         display: none !important;
     }
+    .light-bulb-off{
+        display: none;
+    }
+    .light-bulb-on{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
