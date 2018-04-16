@@ -47,11 +47,13 @@ section{
 
 #home{
     /* background-image: url('../img/bg-01.png'); */
-    background: url('../img/bg-01.png') no-repeat;
+    background: url('../img/bg-01.png') no-repeat !important;
 }
-.contact{
+
+#contact{
     /* background-image: url('../img/bg-01.png'); */
-    background: url('../img/bg-01.png') no-repeat;
+    background: url('../img/bg-02.png') no-repeat !important;
+    margin-bottom: 0 !important;
 }
 
 /**************************************************************************/
