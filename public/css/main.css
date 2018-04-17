@@ -7,6 +7,7 @@ body {
     font-size: 1.5rem;
     margin-top: 7.5rem;
     width: 100%;
+    background: url('../img/bg-01.png') no-repeat !important;
     /*Fix for nav baar*/
 }
 p{
@@ -47,7 +48,7 @@ section{
 
 #home{
     /* background-image: url('../img/bg-01.png'); */
-    background: url('../img/bg-01.png') no-repeat !important;
+    
 }
 
 #contact{
@@ -55,7 +56,9 @@ section{
     background: url('../img/bg-02.png') no-repeat !important;
     margin-bottom: 0 !important;
 }
-
+.font-bold{
+    font-size: 35px;
+}
 /**************************************************************************/
 
 
@@ -107,7 +110,7 @@ nav {
     display: inline-block;
 }
 .brand-logo {
-    width: 100px;
+    width: 25%;
 }
 /* NAV CSS - END */
 
@@ -250,7 +253,8 @@ h6 {
     padding: 20px !important;
 }
 .about-text{
-    font-size: 20px;
+    /*font-size: 20px;*/
+    color: #657687;
 }
 .checkmark{
     color: #fc4a1a;
@@ -302,7 +306,7 @@ h6 {
 
 .icon-default {
     font-size: 3.75rem;
-    color: red;
+    color: #fc4a1a;
 }
 
 .icon-background {
