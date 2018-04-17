@@ -1,6 +1,7 @@
-/* html {
-    scroll-behavior: smooth;
-} */
+html {
+    height: 100%;
+    width: 100%;
+}
 
 body {
     font-weight: bold;
@@ -8,11 +9,15 @@ body {
     margin-top: 7.5rem;
     width: 100%;
     /*Fix for nav baar*/
+    background: url('../img/bg-01.png') no-repeat !important;
+    background-size: 100% 100% !important;
 }
 p{
     color: #657687;
 }
-
+.navbar{
+    padding: 10px 100px 0 100px;
+}
 .page-full {
     height: 600px;
     min-height: 600px;
@@ -39,25 +44,22 @@ section{
 }
 .service-details{
     font-size: .8em;
-    color: #5b6772;
+    color: black;
 }
 .subtext-home{
     margin-bottom: 0 !important;
 }
 
-#home{
-    /* background-image: url('../img/bg-01.png'); */
-    background: url('../img/bg-01.png') no-repeat !important;
-    background-size: cover !important;
-    
+footer{
+    margin-top: 0!important;
 }
 
 #contact{
     /* background-image: url('../img/bg-01.png'); */
     background: url('../img/bg-02.png') no-repeat !important;
-    background-size: cover !important;
-    background-position: bottom left;
-    margin-bottom: 0 !important;
+    background-size: 100% 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 .font-bold{
     font-size: 30px;
@@ -259,9 +261,23 @@ h6 {
     /*font-size: 20px;*/
     color: #657687;
 }
+.about-text-body{
+    margin-top: 40px;
+}
 .checkmark{
-    color: #fc4a1a;
+    color: black;
     margin-left: 20px;
+}
+.separator-about{
+    width: 100px;
+    border-bottom: 4px solid black;
+    display: block;
+    margin: auto;
+}
+.separator{
+    width: 100px;
+    border-bottom: 4px solid #fc4a1a;
+    margin-bottom: 20px;
 }
 .service-endtext{
     margin: 10% 0 0 0;
@@ -336,10 +352,11 @@ img {
     display: block;
 }
 .aboutus-heading{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
-.home-subtext{
-    margin-top: 50px;
+
+.home-subtext-body{
+    margin-top: 20px;
 }
 .btn-cross{
     width: 50px;
