@@ -9,7 +9,7 @@ body {
     margin-top: 7.5rem;
     width: 100%;
     /*Fix for nav baar*/
-    background: url('../img/bg-01.png') no-repeat !important;
+    background: url('../img/banner bg-01.png') no-repeat !important;
     background-size: 100% 100% !important;
 }
 p{
@@ -31,9 +31,9 @@ section{
     /* height: 100vh; */
     margin: 10% 5% 0 5%;
 }
-.contact{
+/*.contact{
     margin: 10% 10% 0 10% !important;
-}
+}*/
 #clients{
     height: 100vh;
     padding-top: 20%;
@@ -56,7 +56,7 @@ footer{
 
 #contact{
     /* background-image: url('../img/bg-01.png'); */
-    background: url('../img/bg-02.png') no-repeat !important;
+    background: url('../img/banner bg-02.png') no-repeat !important;
     background-size: 100% 100% !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -115,7 +115,10 @@ nav {
     display: inline-block;
 }
 .brand-logo {
-    width: 25%;
+width: 100px;
+position: absolute;
+top: 4px;
+left: 121px;
 }
 /* NAV CSS - END */
 
@@ -247,6 +250,7 @@ h6 {
     width: 50%;
     text-wrap:normal;
     margin: auto;
+    color:#ffffff;
 }
 .page-footer{
     background: #333a56;
@@ -266,8 +270,8 @@ h6 {
 }
 .checkmark{
     color: black;
-    margin-left: 20px;
-}
+/*    margin-left: 20px;
+*/}
 .separator-about{
     width: 100px;
     border-bottom: 4px solid black;
@@ -456,6 +460,7 @@ nav{
     }
     .brand-logo {
         width: 75px !important;
+        margin-left: -88px
     }
     .navbar{
         background: white;
@@ -465,4 +470,176 @@ nav{
         text-align: right;
         background: white;
     }
+
+    header .toggle-menu {
+
+    cursor: pointer;
+    display: none;
+    height: 38px;
+    position: relative;
+    width: 38px;
+    display: inline-block;
+    background-color: orange;
+    float: right;
+    position: relative;
+    margin-top: 41px;
+    margin-right: 13px;
+
 }
+}
+
+    /*
+    a.back-to-top {
+        display: none;
+        width: 60px;
+        height: 60px;
+        text-indent: -9999px;
+        position: fixed;
+        z-index: 999;
+        right: 20px;
+        bottom: 20px;
+        background: #27AE61 url("up-arrow.png") no-repeat center 43%;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+    }*/
+
+/*css made by Khushbu*/
+/*a.back-to-top {
+    display: none;
+    width: 60px;
+    height: 60px;
+    text-indent: -9999px;
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    bottom: 20px;
+    background: #27AE61 url("public/img/arrowup.png") no-repeat center 43%;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+*/
+
+header.is-fixed {
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: transparent;
+}
+.col-group {
+    max-width: 1700px;
+}
+
+header .body {
+    float: left;
+    padding-right: 1.04166667%;
+    padding-left: 1.04166667%;
+    width: 100%;
+}
+.logotype {
+    height: 30px;
+    width: 131px;
+}
+
+.logotype {
+    height: 30px;
+    width: 131px;
+}
+
+header ul {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header ul li {
+    position: relative;
+}
+a:not(.button) {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: capitalize;
+    max-width: none;
+    padding: 4px 15px;
+    margin-left: 12px;
+}
+
+a:not(.button):hover{
+color: orange;
+}
+
+.nav-item nav-link{
+display: inline-block;
+}
+.mr-auto, .mx-auto {
+    margin-right: auto !important;
+    float: right;
+    display: inline-block;
+    margin-top: 60px;
+}
+.navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    display: inline !important;
+      font-family: ubuntu !important;
+    font-size:18px;
+    font-weight: bold;
+}
+
+header .toggle-menu {
+    cursor: pointer;
+    display: none;
+    height: 38px;
+    position: relative;
+    width: 38px;
+    display: inline-block;
+}
+.footer-copyright{
+    text-align: center;
+}
+
+.ubuntu-text{
+    font-family: ubuntu !important;
+}
+.navbar-nav .nav-link:hover {
+    color: orange !important;
+  
+}
+
+
+
+.header1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 10000;
+    transition: all 0.2s ease-in-out;
+    height: auto;
+    background-color:transparent;  
+    
+    text-align: center;
+    line-height: 40px;
+}
+
+.header1.active {
+    background: #fff;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.fa.top50{
+    margin-top: 50px !important;
+}
+
+/*css made by Khushbu*/
