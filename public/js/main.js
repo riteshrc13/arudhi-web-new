@@ -1,13 +1,18 @@
 ////////////////////////////////////////////////////////////////////////
 //Script to scroll the bulb on scroll event.
 $(window).scroll(function(){
-    var pos = $(window).scrollTop();
+   
+   var pos = $(window).scrollTop();
     var docH = $(document).height();
     var winH = $(window).height();
     var pct = (pos/docH)/(1.5);
-    var actPos = (pct * winH) - 300;
-    $('.light-bulb-off').animate({"top": actPos+"px"}, 1);
-    $('.light-bulb-on').animate({"top": actPos+"px"}, 1);
+    //var actPos = (pct * winH) -200;
+    var actPos1 = (pct * winH) - 300;
+    $('.light-bulb-off').animate({"top": actPos1+"px"}, 1)
+    $('.light-bulb-off').animate({"top": actPos1+"500"}, 1);
+    $('.light-bulb-on').animate({"top": actPos1+"px"}, 1);
+    var docViewTop = $(window).scrollTop(); 
+           // $('.light-bulb-off').fadeOut();
     if(isBottomIntoView('#second-last-page')){
         $('.light-bulb-off').fadeOut(500);
         $('.light-bulb-on').fadeIn(500);
@@ -19,6 +24,7 @@ $(window).scroll(function(){
 });
 
 $(document).ready(function() {
+    //$('.light-bulb-off').fadeOut(500);
     var pos = $(window).scrollTop();
     var docH = $(document).height();
     var winH = $(window).height();
@@ -32,25 +38,35 @@ $(document).ready(function() {
     $('.light-bulb-off').animate({"left": leftPosOff+"px"}, 1);
     $('.light-bulb-on').animate({"left": leftPosOn+"px"}, 1);
     $('.light-bulb-on').hide(1);
+    
 });
 
 function isBottomIntoView(elem)
 {
-    var docViewTop = $(window).scrollTop();
+    
+    var docViewTop = $(window).scrollTop(); 
     var docViewBottom = docViewTop + $(window).height();
+if(docViewTop > docViewBottom)
+{
+    $('.light-bulb-off').fadeOut();
+}
 
     var elemTop = $(elem).offset().top;
     var elemBottom = elemTop + $(elem).height();
+    
+    
 
     // return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
     return (elemBottom <= docViewBottom);
+    
 }
 ////////////////////////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////////////////////////
 // Script: Navigation Animation
 $(document).ready(function(){
-    $('#nav-btn-cross').hide(1);
+  
+   $('#nav-btn-cross').hide(1);
     $('#nav-btn').click(function(){
         //bring the navigation in
         var el = $('#hiddenNav');
@@ -80,6 +96,8 @@ $(window).resize(function(){
     $('.light-bulb-off').animate({"left": leftPosOff+"px"}, 1);
     $('.light-bulb-on').animate({"left": leftPosOn+"px"}, 1);
     $('.light-bulb-on').hide(1);
+    //$('.light-bulb-off').fadeOut(500);
+    
 });
 ////////////////////////////////////////////////////////////////////////
 
