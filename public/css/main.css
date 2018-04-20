@@ -273,6 +273,7 @@ h6 {
     text-wrap:normal;
     margin: auto;
     color:#ffffff;
+    margin-left: 76px;
 }
 .page-footer{
     background: #333a56;
@@ -282,6 +283,7 @@ h6 {
 }
 .copyright{
     padding: 20px !important;
+    margin-left: 51px;
 }
 .about-text{
     /*font-size: 20px;*/
@@ -325,8 +327,10 @@ h6 {
    margin: auto;
     display: block;
     position: fixed;
-    top:-276.895px
-    //top: -300px;
+/*    top:-276.895px
+*/    
+
+top: -300px;
     margin-top:300px;
     /* left: 40%; */
     max-height: 341px
