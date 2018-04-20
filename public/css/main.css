@@ -9,8 +9,11 @@ body {
     margin-top: 7.5rem;
     width: 100%;
     /*Fix for nav baar*/
-    background: url('../img/banner bg-01.png') no-repeat !important;
+    background: url('../img/bg-01.png') no-repeat !important;
     background-size: 100% 100% !important;
+}
+.social-links{
+    float: right;
 }
 p{
     color: #657687;
@@ -29,14 +32,14 @@ p{
 
 section{
     /* height: 100vh; */
-    margin: 10% 5% 0 5%;
+    margin: 7% 2% 0 3%;
 }
 /*.contact{
     margin: 10% 10% 0 10% !important;
 }*/
 #clients{
-    height: 100vh;
-    padding-top: 20%;
+    height: 40vh;
+    padding-top: 5%;
 }
 #aboutus{
     padding-top: 10%;
@@ -44,7 +47,10 @@ section{
 }
 .service-details{
     font-size: .8em;
-    color: black;
+/*    color: black;
+*/
+color: #657687;
+
 }
 .subtext-home{
     margin-bottom: 0 !important;
@@ -54,13 +60,21 @@ footer{
     margin-top: 0!important;
 }
 
-#contact{
-    /* background-image: url('../img/bg-01.png'); */
-    background: url('../img/banner bg-02.png') no-repeat !important;
+/*#contact{
+     background-image: url('../img/bg-01.png'); 
     background-size: 100% 100% !important;
     margin: 0 !important;
     padding: 0 !important;
+}*/
+
+#image-footer{
+      background-size: 100% 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
 }
+
+
 .font-bold{
     font-size: 30px;
 }
@@ -70,7 +84,7 @@ footer{
 /* NAV CSS - Start */
 
 nav {
-    min-height: 7.5rem;
+    min-height: 5.5rem;
 }
 
 .nav-animate {
@@ -115,10 +129,10 @@ nav {
     display: inline-block;
 }
 .brand-logo {
-width: 100px;
-position: absolute;
+width: 70px;
+/*position: absolute;
 top: 4px;
-left: 121px;
+left: 121px;*/
 }
 /* NAV CSS - END */
 
@@ -184,7 +198,11 @@ html {
 /* FONT CSS - START */
 
 body {
-    font-family: 'Nunito Sans', sans-serif;
+    
+
+    font-family: 'Ubuntu', sans-serif;
+
+
 }
 
 .font-Bigger-heading,
@@ -243,10 +261,14 @@ h6 {
 .address{
     margin: auto;
     display: block;
-    padding: 20px;
+/*    padding: 20px;
+*/        
+
 }
 .adress-text{
-    display: block;
+    /*    display: block;
+*/        display: inline;
+
     width: 50%;
     text-wrap:normal;
     margin: auto;
@@ -269,18 +291,20 @@ h6 {
     margin-top: 40px;
 }
 .checkmark{
-    color: black;
+    color: #657687;
 /*    margin-left: 20px;
 */}
 .separator-about{
     width: 100px;
-    border-bottom: 4px solid black;
+    border-bottom: 4px solid #657687;
     display: block;
     margin: auto;
 }
 .separator{
     width: 100px;
-    border-bottom: 4px solid #fc4a1a;
+/*    border-bottom: 4px solid #fc4a1a;
+*/        border-bottom: 4px solid #657687;
+
     margin-bottom: 20px;
 }
 .service-endtext{
@@ -298,12 +322,14 @@ h6 {
 /* BULB CSS - START */
 
 .light-bulb-off {
-    margin: auto;
+   margin: auto;
     display: block;
     position: fixed;
-    top: -300px;
+    top:-276.895px
+    //top: -300px;
+    margin-top:300px;
     /* left: 40%; */
-    max-height: 341px;
+    max-height: 341px
 }
 
 .light-bulb-on {
@@ -449,8 +475,17 @@ nav{
         padding-bottom: 50%;
     }
     p {
-        line-height: 100%
+        line-height: 20px;
+text-align: justify;
     }
+.contact{
+    font-size: 19px;
+}
+.social-links{
+    margin-top: 24px;
+text-align: center;
+}
+
     body {
         font-size: 1rem;
     }
@@ -460,7 +495,7 @@ nav{
     }
     .brand-logo {
         width: 75px !important;
-        margin-left: -88px
+margin-left: -19px;
     }
     .navbar{
         background: white;
@@ -610,7 +645,7 @@ header .toggle-menu {
     font-family: ubuntu !important;
 }
 .navbar-nav .nav-link:hover {
-    color: orange !important;
+    color: #000 !important;
   
 }
 
@@ -640,6 +675,11 @@ header .toggle-menu {
 
 .fa.top50{
     margin-top: 50px !important;
+}
+
+
+.navbar-nav{
+    padding-right: 9% !important;
 }
 
 /*css made by Khushbu*/
