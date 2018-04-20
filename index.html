@@ -10,8 +10,7 @@
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300" rel="stylesheet">
-  <link href="//db.onlinewebfonts.com/c/8571edb1bb4662f1cdba0b80ea0a1632?family=Ubuntu" rel="stylesheet" type="text/css"/>
-  <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
   <title>Arudhi</title>
 
 </head>
@@ -20,7 +19,40 @@
   <img src="img/lightbulb-off.png" class="light-bulb-off img-responsive"></img>
   <img src="img/lightbulb-on.png" class="light-bulb-on img-responsive"></img>
   <!-- Nav Bar Code - Start -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light header1">
+
+<div class="row">
+
+  <div class="col-md-12">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light header1">
+
+    <div class="col-md-2">
+      <a class="navbar-brand" href="#">
+    <img class="brand-logo img-responsive" src="img/arudhilogo.png" />
+  </a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-9">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#home">Home<span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#aboutus">About Us</a>
+      <a class="nav-item nav-link" href="#services-1">Our Services</a>
+      <a class="nav-item nav-link" href="#contact">Contact</a>
+
+    </div>
+  </div>
+    </div>
+</nav>
+  </div>
+  
+</div>
+
+  <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-light header1">
   <a class="navbar-brand" href="#">
     <img class="brand-logo img-responsive" src="img/arudhilogo.png" />
   </a>
@@ -38,7 +70,7 @@
 
     </div>
   </div>
-</nav>
+</nav> -->
 
 
 <!-- <header class="is-fixed">
@@ -74,6 +106,7 @@
   <!-- Nav Bar Code - End -->
 
   <!-- Main Page Body Content - Start -->
+  <div class="container-fluid">
   <section id="home"> 
       <div class="row text-center home-1">
         <div class="col-sm-12 mt-5">
@@ -100,10 +133,10 @@
   </section>
   <section id="aboutus">
     <div class="container">
-      <div class="row text-center aboutus-heading">
+      <div class="row text-center aboutus-heading" id="">
         <div class="col-sm-12">
             <h2 class="color-dark-blue" style="font-size:50px;">Have you ever thought of</h2><h2 class="color-dark-blue" style="font-size:50px;"> one stop retailer for all your business needs?</h2>
-            <p class="color-orange font-bold"><span class="color-orange">Yes,</span> you have reached the right place.</p>
+            <h2 class="color-orange font-bold" style="font-size:50px;"><span class="color-orange">Yes,</span> you have reached the right place.</h2>
         </div>
       </div>
       <div class="row about-text text-center">
@@ -131,8 +164,8 @@
         <div class="separator"></div>
         <div class="service-details">
           <p class="ubuntu-text">We offer the following services to initiate your potential business idea - </p>
-						<span class="checkmark">&#8226</span> Market Research & Analysis
-						<br/><span class="checkmark">&#8226</span> Process Standardization<br/>
+            <span class="checkmark">&#8226</span> Market Research & Analysis
+            <br/><span class="checkmark">&#8226</span> Process Standardization<br/>
         </div>
         <!-- <button type="button" class="submit-btn btn btn-outline-primary know-more-btn" data-toggle="modal" data-target="#service-1">
           Know More
@@ -159,7 +192,7 @@
         </div>
       </div>
       <div class="col-sm-12 col-md-6 section-image">
-        <img class="img-responsive" src="img/accounting and finance.png" alt="">
+        <img class="img-responsive" src="img/strategy for business.png" alt="">
       </div>
     </div>
   </section>
@@ -181,7 +214,7 @@
         <div class="service-details">
           <p class="ubuntu-text">We offer the following services to market your potential business idea - </p>
           <span class="checkmark">&#8226</span> Digital Marketing<br>
-          <span class="checkmark">&#8226</span> Print & Publication<br>
+          <span class="checkmark">&#8226</span> Print & tion<br>
           <span class="checkmark">&#8226</span> Content Creation<br>
           <span class="checkmark">&#8226</span> Branding Material<br>
           
@@ -207,7 +240,7 @@
       </div>
 
       <div class="col-sm-12 col-md-6 section-image">
-        <img class="img-responsive" src="img/strategy for business.png" alt="">
+        <img class="img-responsive" src="img/accounting and finance.png" alt="">
       </div>
     </div>
   </section>
@@ -249,7 +282,7 @@
           <span class="checkmark">&#8226</span> Incorporation of Automation<br/>
           <span class="checkmark">&#8226</span> Vendor Development<br/>
           <span class="checkmark">&#8226</span> Inventory Management System<br/>
-          <span class="checkmark">&#8226</span> Energy management<br/>
+          <span class="checkmark">&#8226</span> Energy Management<br/>
           <span class="checkmark">&#8226</span> System Controlled Maintenance Management
           <br/>
         </div>
@@ -262,17 +295,15 @@
     <br/>
     <div class="row text-center home-7">
       <div class="col-md-12 color-orange service-endtext">
-        <p class="color-orange">However, <span class="color-dark-blue">our services are not limited to those mentioned. <br/>Reach us for further details.
+        <p class="color-orange">However,<span class="color-dark-blue">our services are not limited to those mentioned.<br/>Reach us for further details.
 
 </span></p>
       </div>
     </div>
   </section>
  
-<div class="">
-          <img class="img-responsive" src="img/banner bg-02.png" alt="" />
 
-</div>
+
   <section id="clients">
 
     <div class="row">
@@ -301,41 +332,49 @@
     </div>
 
   </section>
+  <div id="image-footer">
+            <img class="img-responsive " src="img/banner bg-02.png" alt="" />
+
+</div>
+
+
+</div>
+<!-- <container>
+ -->
+
   <footer class="page-footer font-small pt-4">
-    <div class="footer-copyright py-3 ">
+    <div class="">
+
 <div class="row">
 
-<div class="col-md-6 col-xs-12">
+<div class="col-md-12 col-xs-12">
+
+  <div class="contact">
+      <div class="col-lg-12 address">
+      <p class="adress-text">30th Cross Street, Besant Nagar, Chennai-600090, Tamilnadu, India</p>&nbsp;&nbsp;
+         <i class="fa fa-envelope ">&nbsp;&nbsp;</i><p class="adress-text">contact@arudhi.com</p>
 
 
-<h1><span class="font-60 color-orange">Reach </span><span class="font-60 color-dark-white">Us</span></h1>  
-  <div class=" row contact">
-      <div class="col-lg-6 address">
-        <i class="fa fa-map-marker icon-default"></i><br>
-        <p class="adress-text">30th Cross Street, Besant Nagar, Chennai-600090, Tamilnadu, India</p>
+
+      <div class="social-links text-right">
+      <i style="font-size:24px;padding-right:20px;" class="fa">&#xf082;</i>
+      <i style="font-size:24px;padding-right:20px;" class="fa">&#xf0e1;</i>
+      <i style="font-size:24px;padding-right:20px;" class="fa">&#xf099;</i>
+
+
+
+    </div>
+
+
+
       </div>
-      <div class="col-lg-6 address">
-        <i class="fa fa-envelope icon-default"></i><br>
-        <p class="adress-text">contact@arudhi.com</p>
-      </div>
-   <!--    <div class="col-lg-12 reachus">
-        <h1><span class="font-60 color-orange">Reach </span><span class="font-60 color-dark-blue">Us</span></h1>
-      </div> -->
+
     </div>
 </div>
 
 
+<div class="col-md-4 col-xs-12">
 
-
-<div class="col-md-6 col-xs-12">
-<h1><span class="font-60 color-orange">Social </span><span class="font-60 color-dark-white">Links</span></h1>  
-
-
-      <div class="social-links">
-      <i style="font-size:24px;padding-right:20px;" class="fa top50">&#xf082;</i>
-      <i style="font-size:24px;padding-right:20px;" class="fa top50">&#xf0e1;</i>
-      <i style="font-size:24px;padding-right:20px;" class="fa top50">&#xf099;</i>
-    </div>
   </div>
 </div>
 </div>
@@ -345,6 +384,10 @@
        <span class="copyright text-center"> © 2018 Copyright: Arudhi Pvt Limited. All Rights Reserved.</span>
 </div>
 
+
+
+<!--         <a href="#" class="back-to-top fa fa-angle-up">Back to Top</a>
+ -->
   </footer>
   <!-- Main Page Body Content - End -->
   
