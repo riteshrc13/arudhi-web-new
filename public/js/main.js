@@ -46,7 +46,7 @@ function isBottomIntoView(elem)
     
     var docViewTop = $(window).scrollTop(); 
     var docViewBottom = docViewTop + $(window).height();
-if(docViewTop > 4000)
+if(docViewTop > 3500)
 {
     $('.light-bulb-off').animate({opacity:'0'});
 }
