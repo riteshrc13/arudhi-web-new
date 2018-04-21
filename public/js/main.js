@@ -15,7 +15,7 @@ $(window).scroll(function(){
            // $('.light-bulb-off').fadeOut();
     if(isBottomIntoView('#second-last-page')){
         $('.light-bulb-off').fadeOut(500);
-        $('.light-bulb-on').fadeIn(500);
+        $('.light-bulb-on').fadeIn(0);
     }
     else {
         $('.light-bulb-off').fadeIn(500);
