@@ -335,7 +335,7 @@ h6 {
 
     top: -300px;
     margin-top:300px;
-    /* left: 40%; */
+     left: 40%; 
     max-height: 341px
 }
 
@@ -344,7 +344,7 @@ h6 {
     display: block;
     position: fixed;
     top: -300px;
-    /* left: 40%; */
+   left: 40%; 
     max-height: 385px; 
 }
 
