@@ -18,6 +18,8 @@ body {
 }
 p{
     color: #657687;
+    font-weight: normal;
+    font-family: Ubuntu-light;
 }
 .navbar{
     padding: 10px 100px 0 100px;
@@ -331,7 +333,7 @@ h6 {
 /*    top:-276.895px
 */    
 
-top: -300px;
+    top: -300px;
     margin-top:300px;
     /* left: 40%; */
     max-height: 341px
