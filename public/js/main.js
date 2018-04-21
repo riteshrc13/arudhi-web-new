@@ -1,5 +1,6 @@
 ////////////////////////////////////////////////////////////////////////
 //Script to scroll the bulb on scroll event.
+/*
 $(window).scroll(function(){
    
    var pos = $(window).scrollTop();
@@ -15,7 +16,7 @@ $(window).scroll(function(){
            // $('.light-bulb-off').fadeOut();
     if(isBottomIntoView('#second-last-page')){
         $('.light-bulb-off').fadeOut(500);
-        $('.light-bulb-on').fadeIn(0);
+        $('.light-bulb-on').fadeIn(500);
     }
     else {
         $('.light-bulb-off').fadeIn(500);
@@ -40,7 +41,7 @@ $(document).ready(function() {
     $('.light-bulb-on').hide(1);
     
 });
-
+*/
 function isBottomIntoView(elem)
 {
     
@@ -49,6 +50,7 @@ function isBottomIntoView(elem)
 if(docViewTop > 3500)
 {
     $('.light-bulb-off').animate({opacity:'0'});
+    // $('.light-bulb-off').fadeIn();
 }
 
     var elemTop = $(elem).offset().top;
@@ -126,4 +128,23 @@ $(window).on("scroll", function() {
         //remove the background property so it comes transparent again (defined in your css)
        $(".header1").removeClass("active");
     }
+
+if(($(window).scrollTop() > 400) && ($(window).scrollTop() < 5000)) {
+        $(".light-bulb-off").show();
+        $(".light-bulb-off").css("top", "50px");
+        $(".light-bulb-on").hide();
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+        if(($(window).scrollTop() > 5000) && ($(window).scrollTop() < 5500)) {
+                $(".light-bulb-off").hide();
+        $(".light-bulb-on").show();
+        $(".light-bulb-on").css("top", "50px");
+        }else{
+             $(".light-bulb-on").hide();
+        }
+       
+    }
+
+    
+
 });
